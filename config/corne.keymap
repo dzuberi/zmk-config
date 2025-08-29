@@ -50,7 +50,7 @@
                          display-name = "Raise";
                          bindings = <
     &trans  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &trans
-    &trans &trans   &trans &trans   &trans   &trans      &trans &trans &trans        &trans &trans &trans
+    &trans &kp CAPS   &kp HOME &kp PG_DOWN   &kp PG_UP   &kp END      &kp LEFT &kp DOWN &kp UP        &kp RIGHT &kp DEL &trans
     &trans &trans   &trans &trans   &trans   &trans      &trans &trans  &trans        &trans &trans &trans
                                   &trans &trans   &trans   &trans   &trans    &trans
                          >;
