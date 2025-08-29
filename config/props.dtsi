@@ -1,0 +1,13 @@
+/ {
+    &kscan0 {
+        wakeup-source;
+    };
+    &lt {
+        quick-tap-ms = <175>;
+        tapping-term-ms = <175>;
+    };
+    &mt {
+        quick-tap-ms = <175>;
+        tapping-term-ms = <175>;
+    };
+}
