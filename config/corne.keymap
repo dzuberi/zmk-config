@@ -37,7 +37,7 @@
     &trans    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &trans
     &trans &trans &trans &kp LPAR &kp LBKT &kp LBRC   &kp RBRC &kp RBKT &kp RPAR &trans &trans &trans
     &trans  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                                           &trans     &trans       &trans      &trans  &trans   &trans
+                                           &trans     &trans       &trans      &lt 3 BSPC  &trans   &trans
                          >;
                  };
  
@@ -50,9 +50,19 @@
                          display-name = "Raise";
                          bindings = <
     &trans  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &trans
-    &trans &trans   &kp HOME &kp PAGE_UP   &kp PAGE_DOWN   &kp END      &kp LEFT &kp DOWN &kp UP        &kp RIGHT &trans &trans
+    &trans &kp DEL   &kp HOME &kp PAGE_UP   &kp PAGE_DOWN   &kp END      &kp LEFT &kp DOWN &kp UP        &kp RIGHT &trans &trans
     &trans &trans   &trans &trans   &trans   &trans      &trans &trans  &trans        &trans &trans &trans
-                                  &trans &trans   &trans   &trans   &trans    &trans
+                                  &trans &trans   &lt 3 TAB   &trans   &trans    &trans
+                         >;
+                 };
+ 
+                 adjust_layer {
+                         display-name = "ADJUST";
+                         bindings = <
+    &bt BT_CLR    &bt BT_SEL 0       &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3       &bt BT_SEL 4         &trans   &trans   &trans &trans    &trans &trans
+    &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
+    &trans  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
+                                           &trans     &trans       &trans      &trans  &trans   &trans
                          >;
                  };
  
@@ -61,10 +71,6 @@
                  };
  
                  extra_2 {
-                         status = "reserved";
-                 };
- 
-                 extra_3 {
                          status = "reserved";
                  };
          };
