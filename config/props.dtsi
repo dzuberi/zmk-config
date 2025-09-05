@@ -2,10 +2,10 @@
     wakeup-source;
 };
 &lt {
-    quick-tap-ms = <200>;
+    quick-tap-ms = <250>;
     tapping-term-ms = <180>;
 };
 &mt {
-    quick-tap-ms = <200>;
+    quick-tap-ms = <250>;
     tapping-term-ms = <180>;
 };
